@@ -164,7 +164,7 @@ export async function handle(request: Request): Promise<Response> {
   const method = request.method.toUpperCase();
 
   if (method === "GET" && path === "/health") {
-    return json({ status: "ok", service: "harbor-light-billing-stub" });
+    return json({ status: "ok", service: "tristan-electric-billing-stub" });
   }
 
   if (!isAuthorized(request)) {
